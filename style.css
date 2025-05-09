@@ -1,0 +1,73 @@
+/* 确保固定底部导航不遮挡内容 */
+body {
+    padding-bottom: 56px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-bottom: 0;
+    }
+}
+
+/* 商品卡片悬停效果 */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+   max-height: 120px;
+   object-fit: contain;
+}
+/* 轮播图片高度 */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* 底部导航图标大小 */
+.navbar.fixed-bottom .bi {
+    font-size: 1.5rem;
+}
+
+/* 确保购物车模态框中的图片大小合适 */
+#cartItems img {
+    max-width: 60px;
+    height: auto;
+}
+
+/* 购物车数量徽章样式调整 */
+.badge {
+    font-size: 0.6rem;
+    padding: 0.25em 0.4em;
+}
+
+/* 移动端底部导航图标样式 */
+.navbar-nav .nav-link {
+    padding: 0.5rem 0.25rem;
+}
+
+/* 商品卡片悬停效果 */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* 添加商品按钮样式 */
+.card-body .btn {
+    width: 80%;
+}
